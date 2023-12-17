@@ -22,7 +22,7 @@ export const env = createEnv({
    * `NEXT_PUBLIC_`.
    */
   client: {
-    NEXT_PUBLIC_EVENT_PASS: z.string()
+    //NEXT_PUBLIC_EVENT_PASS: z.string()
   },
 
   /**
@@ -35,7 +35,7 @@ export const env = createEnv({
     SHEETS_CLIENT_EMAIL: process.env.SHEETS_CLIENT_EMAIL,
     EMAIL_PRIVATE_KEY: process.env.EMAIL_PRIVATE_KEY,
     TEST_SPREADSHEET_ID: process.env.TEST_SPREADSHEET_ID,
-    NEXT_PUBLIC_EVENT_PASS: process.env.NEXT_PUBLIC_EVENT_PASS,
+    //NEXT_PUBLIC_EVENT_PASS: process.env.NEXT_PUBLIC_EVENT_PASS,
     NODE_ENV: process.env.NODE_ENV,
   },
   /**

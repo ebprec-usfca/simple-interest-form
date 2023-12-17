@@ -3,7 +3,6 @@ import { FaSpinner } from 'react-icons/fa';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { zipCodes } from '~/constants/Constants';
 
-import { env } from '~/env.mjs';
 import * as Yup from 'yup';
 
 import { type FormPayload } from '~/pages/api/form';
@@ -88,7 +87,7 @@ const WebForm: React.FC<WithResponseProps> = ({ setResponse }) => {
   }, []);
 
   const toggleEventNameVisibility = (enteredValue: string) => {
-    if (enteredValue === env.NEXT_PUBLIC_EVENT_PASS) {
+    if (enteredValue === 'qnbZaz5QCv4L') {
       setEventNameVisible(true);
     } else {
       setEventNameVisible(false);
