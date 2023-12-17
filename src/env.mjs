@@ -11,7 +11,9 @@ export const env = createEnv({
     EMAIL_PASS: z.string(),
     SHEETS_CLIENT_EMAIL: z.string(),
     EMAIL_PRIVATE_KEY: z.string(),
+    TEST_SPREADSHEET_ID: z.string(),
     NODE_ENV: z.enum(["development", "test", "production"]),
+    
   },
 
   /**
@@ -20,7 +22,7 @@ export const env = createEnv({
    * `NEXT_PUBLIC_`.
    */
   client: {
-    // NEXT_PUBLIC_CLIENTVAR: z.string().min(1),
+    NEXT_PUBLIC_EVENT_PASS: z.string()
   },
 
   /**
@@ -32,8 +34,9 @@ export const env = createEnv({
     EMAIL_PASS: process.env.EMAIL_PASS,
     SHEETS_CLIENT_EMAIL: process.env.SHEETS_CLIENT_EMAIL,
     EMAIL_PRIVATE_KEY: process.env.EMAIL_PRIVATE_KEY,
+    TEST_SPREADSHEET_ID: process.env.TEST_SPREADSHEET_ID,
+    NEXT_PUBLIC_EVENT_PASS: process.env.NEXT_PUBLIC_EVENT_PASS,
     NODE_ENV: process.env.NODE_ENV,
-    // NEXT_PUBLIC_CLIENTVAR: process.env.NEXT_PUBLIC_CLIENTVAR,
   },
   /**
    * Run `build` or `dev` with `SKIP_ENV_VALIDATION` to skip env validation.

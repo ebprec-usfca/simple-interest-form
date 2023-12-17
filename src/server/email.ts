@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 
 import { env } from "~/env.mjs";
 import { FormPayload } from '~/pages/api/form';
-import { emailIntro, emailOutro, emails } from '~/constants/Email';
+import { emailIntro } from '~/constants/Email';
 
 // create reusable transporter object using the default SMTP transport
 const transporter = nodemailer.createTransport({
@@ -34,10 +34,6 @@ export default async function sendEmails(payload: FormPayload) {
 
 
   let body = emailIntro(`${payload.firstName} ${payload.lastName}`)
-  body += payload.interests.map(interest => emails[interest])
-    .concat(emailOutro)
-    .join('');
-
   try {
     await sendEmail(payload.email, body);
     console.log('Emails sent');
