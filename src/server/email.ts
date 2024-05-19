@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer';
 
 import { env } from "~/env.mjs";
 import { FormPayload } from '~/pages/api/form';
-import { emailIntro } from '~/constants/Email';
+import { emailIntro, emailOutro, emails, emailsInSpanish } from '~/constants/Email';
 
 // create reusable transporter object using the default SMTP transport
 const transporter = nodemailer.createTransport({
@@ -33,7 +33,9 @@ export default async function sendEmails(payload: FormPayload) {
   });
 
 
-  let body = emailIntro(`${payload.firstName} ${payload.lastName}`)
+  let body = emailIntro(`${payload.firstName} ${payload.lastName}` , payload.isSpanish)
+    .concat(emailOutro(payload.isSpanish));
+
   try {
     await sendEmail(payload.email, body);
     console.log('Emails sent');
@@ -46,7 +48,7 @@ async function sendEmail(email: string, body: string) {
   // Send the email
   const mailData = {
     from: `DAP@EBPREC<${env.EMAIL_ADDR}>`,
-    to: email,
+    to: [email , 'here2stay@ebprec.org'],
     subject: 'EB PREC: Following Up',
     html: body,
   };

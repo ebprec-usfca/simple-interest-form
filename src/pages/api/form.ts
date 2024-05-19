@@ -9,7 +9,8 @@ export type FormPayload = {
   email: string;
   phone: string;
   zip: string;
-  eventName: string;
+  referralSource: referralSourceType;
+  isSpanish: boolean;
 };
 
 
