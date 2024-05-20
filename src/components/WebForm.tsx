@@ -86,9 +86,19 @@ const WebForm: React.FC<WithResponseProps> = ({ setResponse }) => {
       firstName: values.firstName,
       lastName: values.lastName,
       email: values.email,
+      language: "",
+      interests:
+      values.urgent === "Yes"
+        ? ["evictions" as Interest].concat(values.interests)
+        : values.interests,
       referralSource: values.referralSource!,
       phone: values.phone,
       zip: values.zip === "Other" ? values.otherZip : values.zip,
+      contactMethod: values.contactMethod!,
+      communityOwner: values.communityOwner!,
+      appointment: values.appointment!,
+      inRegion: values.inRegion!,
+      notes: values.notes,
       isSpanish: isSpanish,
     };
     const payloadJSON = JSON.stringify(payload);
