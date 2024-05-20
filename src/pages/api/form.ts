@@ -9,7 +9,14 @@ export type FormPayload = {
   email: string;
   phone: string;
   zip: string;
+  contactMethod: 'phone' | 'email';
+  communityOwner: 'Yes' | 'No';
+  appointment: 'Yes' | 'No';
+  inRegion: 'Yes' | 'No';
+  language: string;
   referralSource: referralSourceType;
+  interests: interestType[];
+  notes: string;
   isSpanish: boolean;
 };
 
