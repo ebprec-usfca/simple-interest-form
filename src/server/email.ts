@@ -34,8 +34,8 @@ export default async function sendEmails(payload: FormPayload) {
 
 
   let body = emailIntro(`${payload.firstName} ${payload.lastName}` , payload.isSpanish)
-    .concat(emailOutro(payload.isSpanish));
-
+  body += emailOutro(payload.isSpanish);
+  
   try {
     await sendEmail(payload.email, body);
     console.log('Emails sent');
