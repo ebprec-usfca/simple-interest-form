@@ -20,7 +20,7 @@ Funded by the State of California's Transformative Climate Communities Program, 
 <br><br>
 Building community wealth with community land trusts (or CLTS) and permanent real estate cooperatives, like the East Bay Permanent Real Estate Cooperative, is not only possible but already happening!
 <br><br>
-<a href="https://www.eventbrite.com/o/east-bay-permanent-real-estate-cooperative-18430217721">Attend</a> an East Bay PREC Orientation (3rd Tuesdays of the month), or <a href="https://ebprec.org/orientation">watch</a> the recording
+<a href="https://www.eventbrite.com/o/east-bay-permanent-real-estate-cooperative-18430217721">Attend</a> an East Bay PREC Orientation (3rd Tuesdays of the month), or <a href="https://ebprec.org/orientation">watch</a> the recording.
 <br><br>
 `
 } 
