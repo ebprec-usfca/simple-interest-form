@@ -10,6 +10,8 @@ export const emailIntro = (name: string, isSpanish: boolean) => {
   <br><br>
   Crear riqueza comunitaria con fideicomisos de tierras comunitarias (community land trusts, o CLTs por sus siglas en inglés) y cooperativas inmobiliarias permanentes, como la Cooperativa Inmobiliaria Permanente de East Bay (EB PREC), no sólo es posible:¡ya lo estamos haciendo!
   <br><br>
+  <a href="https://www.eventbrite.com/o/east-bay-permanent-real-estate-cooperative-18430217721">Asistir</a> a una Orientación East Bay PREC (3er martes de cada mes), o <a href="https://ebprec.org/orientation">ver</a> la grabación
+  <br><br>
   ` : `Hi ${name},
 <br><br>
 It’s the Displacement Avoidance Program (DAP) Team at the East Bay Permanent Real Estate Cooperative, part of the <a href="https://bnsnoakland.org/">Better Neighborhoods, Same Neighbors Initiative</a> (BNSN), following up!
@@ -17,6 +19,8 @@ It’s the Displacement Avoidance Program (DAP) Team at the East Bay Permanent R
 Funded by the State of California's Transformative Climate Communities Program, Better Neighborhoods, Same Neighbors envisions an East Oakland with healthy surroundings, safe and accessible transportation and thriving arts and culture that builds community wealth and ensures housing is a human right for existing East Oakland residents. EB PREC is proud to be a partner on this historic initiative!
 <br><br>
 Building community wealth with community land trusts (or CLTS) and permanent real estate cooperatives, like the East Bay Permanent Real Estate Cooperative, is not only possible but already happening!
+<br><br>
+<a href="https://www.eventbrite.com/o/east-bay-permanent-real-estate-cooperative-18430217721">Attend</a> an East Bay PREC Orientation (3rd Tuesdays of the month), or <a href="https://ebprec.org/orientation">watch</a> the recording.
 <br><br>
 `
 } 
@@ -31,7 +35,7 @@ export const emailOutro = (isSpanish: boolean)=>{
   Con amor desde el “DAP in The Deep”`
   :
   `<hr>
-Thank you again for your interest in The East Bay Permanent Real Estate Cooperative. We look forward to seeing you at Orientation soon and very soon!
+Thank you again for your interest in The East Bay Permanent Real Estate Cooperative. We look forward to seeing you at Orientation soon and very soon! 
 <br><br>
 In the meantime, if you or someone you know is in danger of losing their home or business, please reach out to us at <a href="mailto:here2stay@ebprec.org">here2stay@ebprec.org</a> and check out our <a href="https://drive.google.com/file/d/1tiXoXHdBdoFod0O9PeJwtYw9HS1fvUEO/view">Housing Navigation Resource Packet</a> for support!
 <br><br>
