@@ -156,6 +156,7 @@ const WebForm: React.FC<WithResponseProps> = ({ setResponse }) => {
             phone: "",
             zip: "",
             referralSource: undefined,
+            notes: "",
             isSpanish: true,
           } as FormData
         }
@@ -341,6 +342,18 @@ const WebForm: React.FC<WithResponseProps> = ({ setResponse }) => {
                       name="referralSource"
                       component="div"
                       className={errorClass}
+                    />
+                  </div>
+                  {/* Open Response Notes */}
+                  <div className="mb-4">
+                    <label htmlFor="notes" className="mb-1 block text-lg">
+                      {isSpanish ? "¿Algo más que quieres compartir?":"Anything else you'd like us to know?"}
+                    </label>
+                    <Field
+                      as="textarea"
+                      id="notes"
+                      name="notes"
+                      className="w-full rounded border px-3 py-2 focus:border-blue-500 focus:outline-none"
                     />
                   </div>
                 </>
